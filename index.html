@@ -1,0 +1,739 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>App 10 Proyecto Final</title>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!--grupo CSS-->
+ <link rel="stylesheet" href="css/tema1.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+ <!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script  src="js/jquery.mobile-1.4.5.min.js"></script>
+ <!--  <script src="js/acciones.js"</script> -->
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head><body onLoad="MM_preloadImages('imagenes/Relaciones_.gif','imagenes/primarykeyinobjectexplorer.png','imagenes/creacion-de-cuadro-combinado_10918_8_2.gif','imagenes/2.png','imagenes/000400181.png')">
+
+ <div data-role="page" id="Principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1> App 10 Proyecto Final Incursion a las BD </h1>
+ </div>
+ 
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Introducción a las bases de datos</h1>
+  <div>
+  <p></p>
+  <br>
+  </div>
+  <div>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/image_33800233.png" alt="image_33800233" title="image_33800233" id="wows2_0"/></li>
+		<li><img src="data2/images/normalizacionbasededatos.png" alt="NormalizacionBaseDeDatos" title="NormalizacionBaseDeDatos" id="wows2_1"/></li>
+		<li><img src="data2/images/relaciones_.jpg" alt="Relaciones_" title="Relaciones_" id="wows2_2"/></li>
+		<li><img src="data2/images/propiedades_campo.jpg" alt="propiedades_campo" title="propiedades_campo" id="wows2_3"/></li>
+		<li><img src="data2/images/grafico_bases_datos.png" alt="grafico_bases_datos" title="grafico_bases_datos" id="wows2_4"/></li>
+		<li><img src="data2/images/images.jpg" alt="images" title="images" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/basededatos.jpg" alt="bootstrap carousel" title="base-de-datos" id="wows2_6"/></a></li>
+		<li><img src="data2/images/1fn.png" alt="1FN" title="1FN" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="image_33800233"><span><img src="data2/tooltips/image_33800233.png" alt="image_33800233"/>1</span></a>
+		<a href="#" title="NormalizacionBaseDeDatos"><span><img src="data2/tooltips/normalizacionbasededatos.png" alt="NormalizacionBaseDeDatos"/>2</span></a>
+		<a href="#" title="Relaciones_"><span><img src="data2/tooltips/relaciones_.jpg" alt="Relaciones_"/>3</span></a>
+		<a href="#" title="propiedades_campo"><span><img src="data2/tooltips/propiedades_campo.jpg" alt="propiedades_campo"/>4</span></a>
+		<a href="#" title="grafico_bases_datos"><span><img src="data2/tooltips/grafico_bases_datos.png" alt="grafico_bases_datos"/>5</span></a>
+		<a href="#" title="images"><span><img src="data2/tooltips/images.jpg" alt="images"/>6</span></a>
+		<a href="#" title="base-de-datos"><span><img src="data2/tooltips/basededatos.jpg" alt="base-de-datos"/>7</span></a>
+		<a href="#" title="1FN"><span><img src="data2/tooltips/1fn.png" alt="1FN"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider.com</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+     </div>
+    </div>
+   </div>
+
+   
+    <div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class=" ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> ¿Que es una Base de Datos (BD)?</h2>
+    <p></p>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Crear, abrir y cerrar una BD</h2>
+      <p> </p>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Crear tablas de datos</h2>
+       <p> </p>
+       </a>
+       </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2> Sentencias SQL </h2>
+      <p> </p>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Propiedades de los campos</h2>
+      <p> </p>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2> Relaciones en las BD </h2>
+      <p> </p>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2> Creación de consultas con ayuda de un "Asistente" </h2>
+      <p> </p>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2> Normalización </h2>
+      <p> </p>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2> Clave primarias </h2>
+      <p> </p>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2> Llaves foraneas e integridad referencial </h2>
+      <p> </p>
+      </a>
+      </li>
+      </ul>
+      </div>
+      
+      
+      <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Datos del desarrollador</h1>
+  <div>
+  <p>Nombre del alumno: Juan Eduardo Flores Martínez</p>
+  <p>Grupo: "G"</p>
+  <p>Semestre: 4to</p>
+  <p>Submodulo: Desarrolla Aplicaciones Moviles</p>
+  <p>Nombre del docente: Jose Antonio Gomez Hernandez</p>
+  <br>
+  </div>
+  <div>
+    <img src="imagenes/Cinco-de-Mayo.jpg" width="50%" height="50%">
+     </div>
+    </div>
+   </div>
+      
+      
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+       <img src="imagenes/bici.png" width="46" height="46">
+       </div>
+       <div>
+       <h4>Aplicacion Diez</h4>
+       <h4>Juan Eduardo Flores Martìnez</h4>
+       </div>
+       </div>
+       </div>
+
+
+       
+       
+       
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>¿Que es una Base de Datos (BD)?</h1>
+       </div>
+       <div data-role="content" align="center">
+       <div>
+
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image56','','imagenes/Relaciones_.gif',1)"><img src="imagenes/image_33800233.png" width="50%" height="50%" id="Image56"></a>
+  <br>
+
+
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Surgimiento del nombre</h1>
+  <div>
+  
+  
+<p>La primera vez que se escuchó el término base de datos fue en un congreso celebrado en California en 1963.</p>
+  <p>Sus orígenes provienen de la antigüedad, donde ya existían bibliotecas y toda clase de registros, también la utilizaban para recoger información sobre las cosechas.</p>
+
+<p>Se empezaron a desarrollar cuando emepezó a ser necesario almacenar grandes cantidades de información o datos. El concepto de bases de datos siempre ha estado ligado a la informática.</p>
+  <br>
+  </div>
+  <div>
+  
+  
+  
+  <div data-role="main" class="ui-content" align="center">
+ <div style="width:80%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://dryvalleycomputer.com/index.php/" target="_self" data-role="button">
+  <h2>Mas informacion aqui</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  
+     </div>
+    </div>
+   </div>
+       
+       
+        
+       
+       <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Definición</h1>
+  <div>
+  <p>Se define una base de datos (BD) como una serie de datos organizados y relacionados entre sí, los cuales son recolectados y explotados por los sistemas de información de una empresa o negocio en particular.</p>
+<p>Desde el punto de vista informático, la base de datos es un sistema formado por un conjunto de datos almacenados en discos que permiten el acceso directo a ellos y un conjunto de programas que manipulen ese conjunto de datos.</p>
+
+<p>Cada base de datos se compone de una o más tablas que guarda un conjunto de datos. Cada tabla tiene una o más columnas y filas. Las columnas guardan una parte de la información sobre cada elemento que queramos guardar en la tabla, cada fila de la tabla conforma un registro.</p>
+  <br>
+  </div>
+  <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cambio','','imagenes/000400181.png',1)"><img src="imagenes/estructurada.png" width="50%" height="50%" id="cambio"></a>
+<P>Aqui vemos la estructura basica de las BD</P>
+     </div>
+    </div>
+   </div>
+   
+   
+   <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Principales caracteristicas</h1>
+  <div>
+<p>Independencia lógica y física de los datos.</p>
+<p>Redundancia mínima.</p>
+<p>Acceso concurrente por parte de múltiples usuarios.</p>
+<p>Integridad de los datos.</p>
+<p>Consultas complejas optimizadas.</p>
+<p>Seguridad de acceso y auditoría.</p>
+<p>Respaldo y recuperación.</p>
+<p>Acceso a través de lenguajes de programación estándar.</p>
+  <br>
+  </div>
+  <div>
+     </div>
+    </div>
+   </div>
+       
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <div>
+       <img src="imagenes/bici.png" width="46" height="46">
+       </div>
+       <h4>Aplicación Seis, FMJE</h4>
+       </div>
+       </div>
+       </div>
+       </div>
+       
+       
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>Crear, abrir y cerrar una BD</h1>
+       </div>
+       <div data-role="content" align="center">
+       <div>
+		
+        
+        <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Crear BD</h1>
+  <div>
+<p>1.-  Haga clic en la pestaña Archivo, en Nuevo y luego, en Base de datos en blanco.</p>
+
+<p>2.-Escriba un nombre de archivo en el cuadro Nombre de archivo. Para cambiar la ubicación predeterminada del archivo, haga clic en Buscar una ubicación donde colocar la base de datos  Imagen del botón (junto al cuadro Nombre de archivo), vaya a la nueva ubicación y haga clic en Aceptar.</p>
+
+<p>3.-Haga clic en Crear.</p>
+
+<p>Access crea la base de datos con una tabla vacía denominada Tabla1 y, luego, abre esa tabla en la vista Hoja de datos. El cursor se coloca en la primera celda vacía de la columna Haga clic para agregar.</p>
+
+<p>4.-Comience a escribir para agregar datos o puede pegar datos de otro origen, tal y como se describe en la sección Copiar los datos de otro origen en una tabla de Access.</p>
+  <br>
+  </div>
+  <div>
+     </div>
+    </div>
+   </div>
+   
+   
+   
+   <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Abrir BD existente</h1>
+  <div>
+  <p>1.-En la pestaña Archivo, haga clic en Abrir.</p>
+
+<p>2.-En el cuadro de diálogo Abrir, vaya a la base de datos que quiere abrir.</p>
+
+<p>3.-Siga uno de estos procedimientos:</p>
+
+<p>Haga doble clic en la base de datos para abrirla en el modo predeterminado que se especifique en el cuadro de diálogo Opciones de Access o el modo que haya establecido una directiva administrativa.</p>
+
+<p>Haga clic en Abrir para abrir la base de datos con acceso compartido en un entorno multiusuario para que usted y otros usuarios puedan leer y escribir en la base de datos.</p>
+
+<p>Haga clic en la flecha situada junto al botón Abrir y luego en Abrir en modo solo lectura para abrir la base de datos con acceso de solo lectura de modo que pueda verla pero no editarla. Otros usuarios aún pueden leer y escribir en la base de datos.</p>
+
+<p>Haga clic en la flecha situada junto al botón Abrir y luego en Abrir en modo solo lectura para abrir la base de datos con acceso exclusivo. Cuando tiene una base de datos abierta con acceso exclusivo, cualquier persona que intente abrir la base de datos recibirá un mensaje que indica que "el archivo ya está en uso".</p>
+
+<p>Haga clic en la flecha situada junto al botón Abrir y luego en Abrir en modo exclusivo de solo lectura para abrir la base de datos con acceso de solo lectura. Otros usuarios aún pueden abrir la base de datos, pero están limitados al modo de solo lectura.</p>
+  </div>
+  <div>
+     </div>
+    </div>
+   </div>
+        
+        
+        <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Cerrar BD</h1>
+  <div>
+<p>Se puede cerrar una base de datos de varias formas:</p>
+
+<p>En la pestaña Archivo, elegir la opción Cerrar base de datos Cerrar base de datos.</p>
+<img src="imagenes/archivo_cerrarbase.gif" >
+<p>O bien cerrar Access. Obviamente la base también se cerrará.</p>
+  <br>
+  </div>
+  <div>
+     </div>
+    </div>
+   </div>
+        
+
+</div>
+       </div>
+       
+       
+        <div data-role="main" class="ui-content" align="center">
+ <div style="width:80%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://support.office.com/es-es/" target="_self" data-role="button">
+  <h2>Información mas detallada de los 3 temas</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  
+     </div>
+    </div>
+   </div>
+       
+       
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <div>
+       <img src="imagenes/bici.png" width="46" height="46">
+       </div>
+       <h4>Aplicación Seis, FMJE</h4>
+       </div>
+       </div>
+      
+       
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>Crear tablas de datos</h1>
+       </div>
+       <div data-role="content" align="center">
+       <div>
+</div>  
+  
+<p>1.-En el grupo Tablas de la pestaña Crear, haga clic en Diseño de la tabla. <img src="imagenes/f25a96aa-f68a-42ae-bf1f-9824b3756202.gif"></p>
+
+<p>2.-Para cada campo de la tabla, escriba un nombre en la columna Nombre de campo y seleccione un tipo de datos en la lista Tipo de datos.</p>
+
+<p>Si quiere, puede escribir una descripción de cada campo en la columna Descripción. La descripción se muestra después en la barra de estado de la vista Hoja de datos al situar el cursor en ese campo. La descripción también sirve como texto de la barra de estado para los controles de un formulario o informe que se cree arrastrando un campo del panel Lista de campos, así como para los controles que se creen para ese campo al usar el Asistente para formularios o el Asistente para informes.</p>
+
+<p>3.-Tras haber agregado todos los campos, guarde la tabla:</p>
+
+<p>4.-En la pestaña Archivo, haga clic en Guardar.</p>
+
+<p>Cuando quiera comenzar a escribir datos en la tabla, cambie a la vista Hoja de datos y haga clic en la primera celda vacía. También puede pegar datos de otro origen, tal y como se describe en la sección Copiar los datos de otro origen en una tabla de Access.</p>
+
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('change','','imagenes/2.png',1)"><img src="imagenes/Archivos/base-de-datos.gif" width="50%" height="50%" id="change"></a> </div>
+
+
+       </div>
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <div>
+       <img src="imagenes/bici.png" width="46" height="46">
+       </div>
+       <h4>Aplicación Seis, FMJE</h4>
+       </div>
+       </div>
+       
+       
+       
+       
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>Sentencias SQL</h1>
+       </div>
+<div data-role="content" align="center">
+       <div>
+       </div>
+       
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('czcxz','','imagenes/2.png',1)"><img src="imagenes/componentes-sentencia-sql.gif" width="700" height="362" id="czcxz"></a>
+       <br>
+<p>En este capítulo se describen palabras clave y sentencias SQL específicas que se utilizan en las consultas SQL de QMF.</p>
+        
+        <p>AÑADIR</p>
+<p>El usuario puede añadir columnas a una tabla sólo si él mismo ha creado la tabla o si está autorizado específicamente para hacerlo.</p>
+<p>ALL</p>
+<p>Generalmente, una subconsulta devuelve un solo valor. Sin embargo, es posible que una consulta devuelva un conjunto de valores. Con ALL, se ha de cumplimentar cada valor del conjunto devuelto.</p>
+<p>ALTER TABLE</p>
+<p>El usuario puede modificar una tabla sólo si él mismo ha creado la tabla o si está autorizado específicamente para hacerlo. La sentencia ALTER TABLE especifica la tabla existente que ha de modificarse.</p>
+<p>AND</p>
+<p>Puede seleccionar filas según múltiples condiciones conectadas mediante AND u OR.</p>
+<p>ANY</p>
+<p>Generalmente, una subconsulta devuelve un solo valor. Sin embargo, es posible que una consulta devuelva un conjunto de valores.</p>
+        
+        <div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://www.ibm.com/support/" target="_self" data-role="button">
+  <h2>Mas sentencias aqui</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+        
+        
+       <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <div>
+       <img src="imagenes/bici.png" width="46" height="46">
+       </div>
+       <h4>Aplicación Seis,FMJE</h4>
+       </div>
+       </div>
+       </div>
+
+       <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Propiedades de los campos</h1>
+        </div>
+<div data-role="content" align="center">
+        <p>Cada campo de una tabla dispone de una serie de características que proporcionan un control adicional sobre la forma de funcionar del campo.</p>
+
+<p>Las propiedades aparecen en la parte inferior izquierda de la Vista Diseño cuando tenemos un campo seleccionado.</p>
+<br>
+<img src="imagenes/propiedades_campo.gif">
+<br>
+<p>Las propiedades se agrupan en dos pestañas, la pestaña General donde indicamos las características generales del campo y la pestaña Búsqueda en la que podemos definir una lista de valores válidos para el campo. Esta última ya ha sido explicada en un avanzado del tema de creación de tablas, de forma que en esta unidad profundizaremos en la primera.</p>
+
+<p>Las propiedades de la pestaña General pueden cambiar para un tipo de dato u otro mientras que las propiedades de la pestaña Búsqueda cambian según el tipo de control asociado al campo.</p>
+
+<p>Hay que tener en cuenta que si se modifican las propiedades de un campo después de haber introducido datos en él se pueden perder estos datos introducidos.</p>
+       
+       
+       
+       <div data-role="main" class="ui-content" align="center">
+ <div style="width:50%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://www.aulaclic.es/access-2010/" target="_self" data-role="button">
+  <h2>Información mas detallada</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div> 
+        
+               
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="imagenes/bici.png" width="46" height="46">
+   </div>
+   <h4>Aplicacion Diez,FMJE</h4>
+   </div>
+   </div>
+   </div>
+   
+   
+   <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Relaciones en las BD</h1>
+        </div>
+<div data-role="content" align="center">
+        
+<p><h3>¿Para que sirven las relaciones en una base de datos?</h3></p>
+<p>Las relaciones en una base de datos son el pilar fundamental en la construcción de bases de datos relacionales, permite establecer las concordancias, asignaciones y relación entre las entidades o tablas, así mismo permite garantizar la integridad referencial de los datos. Con el fin de mantener la lógica y consistencia de los mismos.</p>
+
+<p>Permiten evitar la duplicidad de registros.</p>
+
+
+<p><h4>La tabla siguiente describe los tipos de relaciones de bases de datos.</h4></p>
+<br>
+<img src="imagenes/relaciones.jpg" width="50%" height="60%">      
+               
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="imagenes/bici.png" width="46" height="46">
+   </div>
+   <h4>Aplicacion Diez,FMJE</h4>
+   </div>
+   </div>
+   </div>
+   
+   
+   <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Creación de consultas con ayuda de un "Asistente"</h1>
+        </div>
+<div data-role="content" align="center">
+        
+       <p>1.- En el grupo Consultas de la pestaña Crear, haga clic en Asistente para consultas. Si usa Access 2007, haga clic en Crear > Otros > Asistente para consultas.</p>
+       
+<p>El grupo Consultas de la cinta de Access incluye dos opciones: Asistente para consultas y Diseño de consulta</p>
+<br>
+       <img src="imagenes/401f7f1f-e7ae-4687-a5a0-952906371a12.png">
+		<br>
+<p>2.-En el cuadro de diálogo Nueva consulta, haga clic en Asistente para consultas y en Aceptar.</p>
+
+<p>3.-A continuación, agregue campos. Puede agregar hasta 255 campos de 32 tablas o consultas.</p>
+
+<p>Para cada campo, realice estos dos pasos:</p>
+
+<p> A)En Tablas/Consultas, haga clic en la tabla o consulta que contiene el campo.</p>
+
+<P>B)En Campos disponibles, haga doble clic en el campo para agregarlo a la lista de Campos seleccionados. Si desea agregar todos los campos a la consulta, haga clic en el botón con el corchete angular derecho doble (>>).</P>
+
+<P>C)Cuando haya agregado todos los campos que desee, haga clic en Siguiente.</P>
+<BR>
+<IMG src="imagenes/a9defa24-2538-446f-84a7-509a44ac644e.png" width="100%" height="50%">
+<BR>
+
+<P>4.-Si no ha agregado campos numéricos (campos que contienen datos numéricos), vaya al paso 9. Si ha agregado campos numéricos, el asistente le preguntará si desea que la consulta devuelva detalles o datos de resumen.</P>
+
+<P>Siga uno de estos pasos:</P>
+
+<P>A)Si desea ver registros individuales, haga clic en Detalles y, después, en Siguiente. Vaya al paso 9.</P>
+
+<P>B)Si desea ver datos numéricos resumidos, como promedios, haga clic en Resumen y, después, en Opciones de resumen.</P>
+
+<BR>
+<IMG src="imagenes/e2110d63-e66d-436a-9e31-92e14bdc4780.png" width="100%" height="50%">
+<BR>
+<P>5.-En el cuadro de diálogo Opciones de resumen, especifique los campos que desea resumir y cómo desea resumir los datos. Solo se muestran los campos numéricos.</P>
+
+<P>6.-Haga clic en Aceptar para cerrar el cuadro de diálogo Opciones de resumen.</P>
+
+<P>7.-Si no ha agregado un campo de Fecha y hora a la consulta, vaya al paso 9. Si ha agregado un campo de Fecha y hora a la consulta, el Asistente para consultas le preguntará cómo desea agrupar los valores de fechas. Por ejemplo, suponga que agrega a la consulta un campo numérico, como "Precio", y un campo de fecha y hora, como "Fecha de la transacción". A continuación, especifica en el cuadro de diálogo Opciones de resumen que desea ver el valor promedio del campo "Precio". Como ha incluido un campo de fecha y hora, puede calcular valores de resumen para cada valor único de fecha y hora, para cada día, mes, trimestre o año.</P>
+
+<BR>
+<IMG SRC="imagenes/22d24f0a-db28-42d1-bbe2-dabef77b43ce.png" width="100%" height="50%">
+<BR>
+
+
+<P>9.-En la última página del asistente, agregue un título a la consulta, especifique si desea abrirla o modificarla y, a continuación, haga clic en Finalizar.</P>
+
+<P>Si elige abrir la consulta, esta muestra los datos seleccionados en la vista Hoja de datos. Si elige modificar la consulta, esta se abre en la vista Diseño.</P>
+        
+        
+        
+               
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="imagenes/bici.png" width="46" height="46">
+   </div>
+   <h4>Aplicacion Diez,FMJE</h4>
+   </div>
+   </div>
+   </div>
+   
+   
+   <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Normalización</h1>
+        </div>
+<div data-role="content" align="center">
+        
+        
+        
+        <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/page_1.jpg" alt="Normalizacion de BD" title="Normalizacion de BD" id="wows1_0"/></li>
+		<li><img src="data1/images/basededatos.jpg" alt="base-de-datos" title="base-de-datos" id="wows1_1"/></li>
+		<li><img src="data1/images/normalizacin+de+una+base+de+datos.jpg" alt="Normalizacion" title="Normalizacion" id="wows1_2"/></li>
+		<li><img src="data1/images/normalizacionbasededatos.png" alt="NormalizacionBaseDeDatos" title="NormalizacionBaseDeDatos" id="wows1_3"/></li>
+		<li><img src="data1/images/1fn.png" alt="1FN" title="1FN" id="wows1_4"/></li>
+		<li><img src="data1/images/2fn.png" alt="2FN" title="2FN" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/3fn.png" alt="http://wowslider.com/" title="3FN" id="wows1_6"/></a></li>
+		<li><img src="data1/images/images.jpg" alt="images" title="images" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Normalizacion de BD"><span><img src="data1/tooltips/page_1.jpg" alt="Normalizacion de BD"/>1</span></a>
+		<a href="#" title="base-de-datos"><span><img src="data1/tooltips/basededatos.jpg" alt="base-de-datos"/>2</span></a>
+		<a href="#" title="Normalizacion"><span><img src="data1/tooltips/normalizacin+de+una+base+de+datos.jpg" alt="Normalizacion"/>3</span></a>
+		<a href="#" title="NormalizacionBaseDeDatos"><span><img src="data1/tooltips/normalizacionbasededatos.png" alt="NormalizacionBaseDeDatos"/>4</span></a>
+		<a href="#" title="1FN"><span><img src="data1/tooltips/1fn.png" alt="1FN"/>5</span></a>
+		<a href="#" title="2FN"><span><img src="data1/tooltips/2fn.png" alt="2FN"/>6</span></a>
+		<a href="#" title="3FN"><span><img src="data1/tooltips/3fn.png" alt="3FN"/>7</span></a>
+		<a href="#" title="images"><span><img src="data1/tooltips/images.jpg" alt="images"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslideshow</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+  <br>      
+<p>  La normalización de Base de Datos, es el proceso de organizar los datos en una base de datos que incluye la creación de tablas y el establecimiento de relaciones entre ellas.</p>
+
+<p>Este proceso es utilizado para ayudar a eliminar los datos redundantes.</p>
+
+
+<p><h3>Primera Forma Normal (1FN)</h3></p>
+<p>La primera forma normal significa que los datos están en un formato de entidad, lo que significa que se han cumplido las siguientes condiciones:</p>
+
+<p>Eliminar grupos repetidos en tablas individuales</p>
+<p>Crear una tabla independiente para cada conjunto de datos relacionados</p>
+<p>Identificar cada conjunto de relacionados con la clave principal</p>
+<p>No utilice varios campos en una sola tabla para almacenar datos similares</p>
+
+
+<p><h3>Segunda Forma Normal (2FN)</h3></p>
+<p>La segunda forma normal asegura que cada atributo describe la entidad</p>
+<p>Crear tablas separadas para el conjunto de valores y los registros múltiples, estas tablas se deben relacionar con una clave externa.</p>
+
+<p>Los registros no deben depender de otra cosa que la clave principal de la tabla, incluida la clave compuesta si es necesario</p>
+
+<p><h3>Tercera forma normal (3FN)</h3></p>
+<p>La tercera forma normal comprueba las dependencias transitivas, eliminando campos que no dependen de la clave principal.</p>
+
+<p>Los valores que no dependen de la clave principal no pertenecen a la tabla</p>
+<p>Los campos que no pertenecen a la clave principal colóquelos en una tabla aparte y relacionen ambas tablas por medio de una clave externa.</p>
+  
+               
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="imagenes/bici.png" width="46" height="46">
+   </div>
+   <h4>Aplicacion Diez,FMJE</h4>
+   </div>
+   </div>
+   </div>
+   
+   
+   <div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Claves primarias"</h1>
+        </div>
+<div data-role="content" align="center">
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('asdasd','','imagenes/creacion-de-cuadro-combinado_10918_8_2.gif',1)"><img src="imagenes/44204f83deb8b01d95802db5294fca12.jpg" width="638" height="479" id="asdasd"></a>
+    
+   <p> Una clave primaria es la columna o colección de columnas que identifican de forma única a una fila determinada en una tabla. La clave primaria proporciona una forma importante de distinguir una fila de otra. Subrayar las columnas o la colección de columnas que componen la clave primaria usualmente es la mejor forma de representar la clave primaria de cada tabla de la base de datos.</p>
+   
+   <p>Existen tres tipos de claves primarias; una clave natural es una clave primaria compuesta de una columna que identifica de forma única a una entidad, por ejemplo el número de seguridad social de una persona o el número de identificación vehicular (VIN, Vehicle Identification Number en inglés) de un vehículo. Una clave artificial es una columna creada para una entidad con el propósito de servir únicamente como clave primaria y es visible para los usuarios. Además, una clave subrogada es una clave primaria generada por el sistema, usualmente un tipo de datos numerado automáticamente que suele estar escondido del usuario.</p>
+    
+    
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+   <img src="imagenes/bici.png" width="46" height="46">
+   </div>
+   <h4>Aplicacion Diez,FMJE</h4>
+ </div>
+   </div>
+   </div>
+   
+   
+   <div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Llaves foraneas e integridad referencial</h1>
+        </div>
+<div data-role="content" align="center">
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image57','','imagenes/primarykeyinobjectexplorer.png',1)"><img src="imagenes/descarga.jpg" width="50%" height="50%" id="Image57"></a>
+<p>        En el contexto de bases de datos relacionales, una clave foránea o clave ajena (o Foreign Key FK) es una limitación referencial entre dos tablas. La clave foránea identifica una columna o grupo de columnas en una tabla (tabla hija o referendo) que se refiere a una columna o grupo de columnas en otra tabla (tabla maestra o referenciada). Las columnas en la tabla referendo deben ser la clave primaria u otra clave candidata en la tabla referenciada.</p>
+<p>        Respecto a integridad referencial podemos decir de manera simple que integridad referencial significa que cuando un registro en una tabla haga referencia a un registro en otra tabla, el registro correspondiente debe existir.</p>
+<p>        Para poder establecer una relación entre dos tablas, es necesario asignar un campo en común a las dos tablas.</p>
+
+<div data-role="main" class="ui-content" align="center">
+ <div style="width:80%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://ingsystemas.webnode.es/bases-de-datos/" target="_self" data-role="button">
+  <h2>Toca aquí para ver un ejemplo</h2>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+
+
+               
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="imagenes/bici.png" width="46" height="46">
+   </div>
+   <h4>Aplicacion Diez,FMJE</h4>
+   </div>
+   </div>
+   </div>
+</body>
+</html>
+
+
